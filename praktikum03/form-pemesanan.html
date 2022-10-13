@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan pizza</title>
+</head>
+<body>
+    <h1>Black Goose Bistro | Pizza -on-Demand</h1>
+    <p>our 12"wood-pizzas are availabel for delivery. Buil your custom pizza and we'll deliver it within an hour</p>
+                <hr>
+    <form action="Thankyou.html">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Your Infomation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <label for="Name">Name</label></td>
+                    <td>: <input type="text" id="Name"></td>
+                </tr>
+                <tr>
+                    <td> <label for="Adress">Adress</label></td>
+                    <td>: <input type="text" id="Adress"></td>
+                </tr>
+                <tr>
+                    <td> <label for="hp">No Hanpone</label></td>
+                    <td>: <input type="number" id="hp"></td>
+                </tr>
+                <tr>
+                    <td> <label for="Email">Email</label></td>
+                    <td>: <input type="email" id="Email"></td>
+                </tr>
+                <tr>
+                    <td> <label for="deskripsi">Delivery Instruck</label></td>
+                    <td>: <textarea id="deskripsi"="textarea"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <fieldset>
+            <legend>Desain Your Dream Pizza</legend>
+            <h4>Crust (Choose one)</h4>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="radio" id="classic" name="crust">
+                    <label for="classic">classic white</label>
+                </li>
+                <li>
+                    <input type="radio" id="Multigrain" name="crust">
+                    <label for="Multigrain">Multigrain</label>
+                </li>
+                <li>
+                    <input type="radio" id="una" name="crust">
+                    <label for="una">Una Mlet</label>
+                </li>
+                <li>
+                    <input type="radio" id="cheese" name="crust">
+                    <label for="cheese">Chesse Galore</label>
+                </li>
+                <li>
+                    <input type="radio" id="meat" name="crust">
+                    <label for="meat">Meat Lovers</label>
+                </li>
+            </ul>
+            <h4>Toopings (Choose as many as you want)</h4>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="checkbox" id="White Sauce">
+                    <label for="White Sauce">White Sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Mozarella Chesse">
+                    <label for="Mozarella Chesse">Mozarella Chesse</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Papperani">
+                    <label for="Papperani">Papperani</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Mushrooms">
+                    <label for="Mushrooms">Mushrooms</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="peppers">
+                    <label for="peppers">peppers</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Anchories">
+                    <label for="Anchories">Anchories</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pineapple">
+                    <label for="pineapple">pineapple</label>
+                </li>
+            </ul>
+            <h4>Number</h4>
+            <label for="count">How Many Pizza</label>
+            <input type="number" id="count">
+            <br><br>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
