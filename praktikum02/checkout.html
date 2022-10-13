@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        .flex, .isi{
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex{
+            background-color: darkgray;
+            padding: 5px;
+        }
+        #info td{
+            padding-bottom: 30px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- paren div -->
+    <div style="border: solid 1px;">
+
+
+        <!-- head -->
+        <div class="flex">
+            <div> <a href="cart.html"><button>o</button></a>
+                Andrian N's Online Shop
+            </div>
+            <div>
+               <a href="#">Category 1</a>|
+               <a href="#">Category 2</a>|
+               <a href="#">Category3</a> 
+            </div>
+            <div>
+                <img src="asset/search1.png" width="10px" alt="">
+                <img src="asset/cart.png" width="10px" alt="">
+                Cart(1)
+            </div>
+        </div>
+
+
+        <!-- isi -->
+        <div class="isi">
+
+            <!-- Thank you -->
+            <div style="width: 100%; margin: 20px;">
+
+                Order 131217312<br>
+                <b style="font-size: large;">Thank you, kenny!</b>
+                <hr>
+                Your order is confirmed. <br>
+                We've accepted your order and we're getting it ready.
+                <hr>
+          <b style="font-size: large;">Customer Information</b> <br>
+                <table id="info" style="border:1px;width: 100%;">
+                    <tr>
+                        <td>
+                            <b>Shipping address</b> <br>
+                            kenny bostick <br>
+                            <a href="1">12 waldo point road Mishauken, NY 11200 United States</a>
+                        </td>
+                        <td>
+                            <b>Billing Address</b><br>
+                             kenny bostick <br>
+                             <a href="1">12 waldo point road Mishauken, NY 11200 United States</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Shipping Methode</b><br>
+                            UPS Gaound (Estimathed ship time of 3-6 days)
+                        </td>
+                        <td>
+                            <b>Payment Method</b> <br>
+                            <img src="asset/visa.png" width="15px" alt=""> Ending in 3217-$32.60
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+
+            <!-- summary -->
+            <div style="background-color: rgb(205, 205, 205); width: 40%; margin: 20px; height: fit-content; padding: 10px;">
+                <b>Summary (1 item)</b>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>Subtotal</td>
+                        <td align="right">$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shiping</td>
+                        <td align="right">$2.20</td>
+                    </tr>
+                    <tr>
+                        <td>Est. Taxes</td>
+                        <td align="right">$1.40</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Gift card or discount code <br>
+                            <input type="text" placeholder="xxxxxxxx" style="width: 100%;" ><button>Aplly</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td align="right"><b>$23.60</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- kaki -->
+        <div class="flex">
+            <div>
+                Andrian N's Online Shop <br>
+                <img src="asset/visa_colored.jpg" alt="" width="20px">
+                <img src="asset/master_card.png" alt="" width="20px">
+                <img src="asset/american_expres.png" alt="" width="20px">
+            </div>
+            <div>
+                <a href="#">Category x</a>|
+                <a href="#">Category y</a>|
+                <a href="#">Category z</a>
+            </div>
+            <div>
+                Stay in touch! Join our Newsletter <br>
+                <input type="text" placeholder="Enter Email">
+                <button style="background-color: red; color: aliceblue;">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

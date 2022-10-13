@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .flex, .isi{
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex{
+            background-color: darkgray;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- paren div -->
+    <div style="border: solid 1px;">
+
+
+        <!-- head -->
+        <div class="flex">
+            <div>
+                Andrian N's Online Shop
+            </div>
+            <div>
+                <a href="#">Category 1</a>|
+               <a href="#">Category 2</a>|
+               <a href="#">Category3</a> 
+            </div>
+            <div>
+                <img src="asset/search1.png" width="10px" alt="">
+                <img src="asset/cart.png" width="10px" alt="">
+                Cart(1)
+            </div>
+        </div>
+
+
+        <!-- isi -->
+        <div class="isi">
+
+            <!-- your cart -->
+            <div style="width: 100%; margin: 20px;">
+                <b>Your Cart</b>
+                <table style="width: 100%;">
+                    <thead style="background-color: gray;">
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div  style="display: flex;">
+                                    <div><img src="asset/T-Shirt desain.jfif" alt="" width="70px"></div>
+                                    <div> T-Shirt <br> Size: small </div>
+                                </div>
+                            </td>
+                            <td>
+                                <b>$20.00</b>
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr style="background-color: gray;">
+                            <td colspan="3" align="right">Subtotal : <b>$20.00</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- summary -->
+            <div style="background-color: rgb(205, 205, 205); width: 40%; margin: 20px; height: fit-content; padding: 10px;">
+                <b>Summary (1 item)</b>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>Subtotal</td>
+                        <td align="right">$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shiping</td>
+                        <td align="right">-</td>
+                    </tr>
+                    <tr>
+                        <td>Est. Taxes</td>
+                        <td align="right">-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td align="right"><b>$20.00</b></td>
+                    </tr>
+                </table>
+                <a href="checkout.html"><button style="background-color: rgb(0, 39, 138);color: whitesmoke; width: 100%;">Checkout</button></a>
+            </div>
+        </div>
+
+
+        <!-- kaki -->
+        <div class="flex">
+            <div>
+                Andrian N's Online Shop <br>
+                <img src="asset/visa_colored.jpg" alt="" width="20px">
+                <img src="asset/master_card.png" alt="" width="20px">
+                <img src="asset/american_expres.png" alt="" width="20px">
+            </div>
+            <div>
+                <a href="#">Category x</a>|
+                <a href="#">Category y</a>|
+                <a href="#">Category z</a>
+            </div>
+            <div>
+                Stay in touch! Join our Newsletter <br>
+                <input type="text" placeholder="Enter Email">
+                <button style="background-color: red; color: aliceblue;">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
