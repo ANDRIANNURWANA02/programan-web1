@@ -1,0 +1,50 @@
+.container div {
+    border: 2px solid black;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    position: relative;
+    border-radius: 7PX;
+}
+
+.baris1{
+height: 50px;
+margin-bottom: 5px;
+
+}
+.baris2 {
+    height: 400px;  
+}
+
+.satu {
+    background-color: yellow;
+    width: 20%;
+    float: left;
+}
+.dua {
+    background-color: orangered;
+    width: 76%;
+    float: left;
+}
+.tiga {
+    background-color: green;
+    width: 20%;
+    float: left;
+}
+.empat {
+    background-color: dimgray;
+    width: 55%;
+    float: left;
+}
+.lima {
+    background-color: aqua;
+    width: 20%;
+    float: left;
+}
+.enam {
+    background-color: blue;
+    height: 50px;
+    margin-left: auto;
+    width: 97%;
+    float: left;
+}
