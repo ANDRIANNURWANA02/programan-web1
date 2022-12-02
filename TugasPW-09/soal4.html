@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function jumlah() {
+            let bilangan1 = document.getElementById("bilangan1").value;
+            let bilangan2 = document.getElementById("bilangan2").value;
+            let hasil_let = parseInt(bilangan1) + parseInt(bilangan2);
+
+            let hasil = document.getElementById("hasil jumlah");
+            hasil.innerHTML = hasil_let;
+        }
+    </script>
+</head>
+<body>
+   <input type="number" id="bilangan1">
+   <br>
+   +
+   <br>
+   <input type="number" id="bilangan2">
+   <br>
+   =
+   <span id="hasil jumlah"></span>
+   <br>
+  <input type="submit" onclick="jumlah()">
+</body>
+</html>
