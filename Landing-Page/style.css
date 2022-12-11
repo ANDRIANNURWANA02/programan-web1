@@ -1,0 +1,292 @@
+:root{
+    --accent: #008000;
+}
+
+*,html,body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    scroll-behavior: smooth;
+    background-color:cornflowerblue;
+}
+.fcontainer{
+    display: flex;
+    width: 99%;
+    height: 13.5vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding: 25px;
+    width: 100%;
+    padding: 12px;
+    height: 50px;
+    background-color: black;
+    box-shadow: 0,7px 15px 0 rgba(0, 0, 0, 0,15);
+}
+header img{
+    width: 50px;
+    height: 50px;
+
+}
+.brand{
+    flex-direction: row;
+    font-size: 16px;
+   color: crimson;
+    margin: 12px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+
+.navigation>li{
+    list-style-type: none;
+    right: 45px;
+}
+
+.navigation>li>a{
+    color: cornflowerblue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+.navigation>li>a:hover{
+color: crimson;
+transition: all 0.4s ease-in-out;
+}
+.container.search{
+    display: flex;
+    justify-content: end;
+}
+.search{
+    border-radius: 100px;
+    margin: 40px;
+
+}
+.search>img{
+    width: 20px;
+    height: 20px;
+   
+}
+
+.promo, .produk{
+    display: flex;
+    list-style: none;
+    color: black;
+    /* padding: 2;  */
+    border-radius: 15px;
+    margin-bottom: 7px;
+    overflow-x: auto;
+    background-color: cadetblue;   
+} 
+.promo div, .produk div{
+    background-color: white;
+    margin: 20px;
+    min-width: 150px;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 5px darkblue;
+    height: fit-content;
+    padding: 5px;
+}
+
+span{
+    padding: 2px;
+    background-color:  darkorange;
+    color: aliceblue;
+    border-radius: 7px;
+    box-shadow: 0 0 2px darkblue;
+}
+
+button{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: crimson;
+    transition: all 0.4s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    margin: 30px;
+    padding: 8px;
+    color: white;
+}
+
+a:hover{
+     color: black;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact:hover{
+    color: darkcyan;
+}
+
+.promo img,
+.produk img{ 
+    width: 9em;
+    height: 12em;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 0;   
+}
+.img1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:   rgb(173, 249, 224);
+    border-radius: 4px;
+}
+.img2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:   rgb(173, 249, 224);
+    border-radius: 4px;
+}
+
+.img3{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:   rgb(173, 249, 224);
+    border-radius: 4px;
+}
+
+.conten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+} 
+
+.vidio{
+    margin: 10%;
+    margin-top: 2%;
+    color: violet;
+}
+iframe{
+    margin-left: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+}
+
+.vidio>a{
+    
+}
+
+.layanan{
+    /* text-decoration: dotted; */
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.layanan img{
+    width: 130px;
+    padding-right: 5px;
+    margin: 8px;
+}
+
+.layanan>h3{
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+.tentang{
+    background-color: rgb(152, 244, 244);
+    border-radius: 12px;
+    padding: 1.5%;
+}
+
+.tentang a{
+    color: white;
+    text-decoration: underline;
+}
+.tentang>h3{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2%;
+    text-decoration: underline;
+}
+footer{
+    background-color: rgb(0, 94, 95);
+    width: 100%;
+   
+   
+}
+.sumber{
+    padding: 2%;
+    color: white;
+}
+.sumber>h3{
+    text-align: center;
+}
+.sumber>ul{
+    color: white;
+}
+
+.konsultasi{
+    height: 30px;
+    border: solid 2px white;
+    color: black;
+    text-align: center;
+    margin: 2%;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.contact{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+}
+
+.contact div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+.contact a{
+    color: white;
+    margin: 0;
+}
+
+.contact>h3{
+    text-align: center;
+    color: white;
+    padding: 12px;
+}
+.contact img{
+    width: 20px;
+    margin-left:5px ;
+    height: 20px;
+    text-align: center;
+    float: inline-end;
+}
+

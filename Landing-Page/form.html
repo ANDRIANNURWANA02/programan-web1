@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Konsultasi</title>
+        <style>
+            * body,html{
+                margin: 10px;
+                scroll-behavior: smooth;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                
+            }
+            h3{
+                padding: 0;
+                margin: 0;
+                margin-left: 230px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+           
+            .input{
+                border: solid 1px black;
+                width: 600px;
+                padding: 5px;
+                background-color: aliceblue;
+                border-radius: 5px;
+                margin-left: 1%;
+            }
+            .submit{
+                background-color: rgb(55, 55, 191);
+                color: white;
+                border-radius: 5px;
+            }
+            .submit:hover{
+                color: crimson;
+                background-color: white;
+                cursor: pointer;
+            }
+            .reset{
+                background-color: rgb(55, 55, 191);
+                color: white;
+                border-radius: 5px;
+            }
+            .reset:hover{
+                color: crimson;
+                background-color: white;
+                cursor: pointer;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                margin-left: 13%;
+                padding: 5px;
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 id="konsultasi">Konsultasi 24 Jam</h3>
+   <div class="input">     
+<form method="GET" action="index.html">
+    Nama: <input type="text" name="nama" placeholder="Nama" />
+    <hr />
+    Email: <input type="email" name="email" placeholder="Email" />
+    <hr />
+    Umur: <input type="umur" name="umur" placeholder="Umur" />
+    <hr />
+    Alamat: <input type="text" name="alamat" placeholder="Alamat" />
+    <hr />
+    Jenis Kelamin: 
+        <label><input type="radio" name="gender" value="Laki-laki" /> Laki-laki</label>
+        <label><input type="radio" name="gender" value="perempuan" /> Perempuan</label>
+    <hr />
+    Keluhan: <br /><textarea name="Keluhan" rows="5" cols="79"></textarea>
+    <hr />
+    <input class="submit" type="submit" name="submit" value="Submit">
+    <input class="reset" type="reset" name="reset" value="Reset">
+</form>
+</div><br><br>
+<h3>Daftar Harga Obat</h3>
+<table>
+    <tr>
+        <th class="No">No</th>
+        <th>Nama Produk</th>
+        <th>Harga Satuan</th>
+    </tr>
+    <tr>
+        <td class="1">1</td>
+        <td>Madu Ganggang Hijau</td>
+        <td>350.000,00</td>
+    </tr>
+    <tr>
+        <td class="2">2</td>
+        <td>Obat Mata Ampuh</td>
+        <td>300.000,00</td>
+    </tr>
+    <tr>
+        <td class="3">3</td>
+        <td>Obat Tumor Jinak</td>
+        <td>250.000,00</td>
+    </tr>
+    <tr>
+        <td class="4">4</td>
+        <td>Obat Penurun Lemak</td>
+        <td>350.000,00</td>
+    </tr>
+</table>
+</body>
+</html>
+
+
+
