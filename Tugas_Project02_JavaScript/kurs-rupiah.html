@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+    <link rel="stylesheet" href="css/kurs-rupiah.css">
+</head>
+<body>
+    <fieldset>
+        <legend>
+            Kurs Rupiah - Mata Uang Asing
+        </legend>
+        <table>
+            <tr>
+                <th>Masukan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="masukan_nilai" onchange="kurs()">
+                </td>
+                <td>
+        <select name="" id="select_valas" onchange="kurs()">
+            <option value="0">---pilih Mata Uang---</option>
+            <option value="USD">Dollar US</option>
+            <option value="SGD">Dollar Singapore</option>
+            <option value="Ringgit">Ringgit Malaysia</option>
+            <option value="Yen">Yen Jepang</option>
+            <option value="Euro">Euro</option>
+            <option value="Riyal">Riyal Arab Saudi</option>
+
+        </select>
+        <td>
+            <input type="text" id="nilai_rupiah" value="0" readonly>
+        </td>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+        function kurs(){
+            let M_nilai = document.getElementById("masukan_nilai").value;
+            let kurs = document.getElementById("select_valas").value;
+            let hasil;
+
+            if(kurs =="USD"){
+                hasil = M_nilai*9.915;
+            }else if(kurs == "SGD"){
+                hasil = M_nilai*13.472;
+            }else if(kurs =="Ringgit"){
+                hasil = M_nilai*874;
+            }else if(kurs =="Yen"){
+                hasil =M_nilai*120;
+            }else if(kurs =="Euro"){
+                hasil =M_nilai*15.888;
+            }else if(kurs =="Riyal"){
+                hasil =M_nilai*3.592;
+            }else hasil =0;
+            document.getElementById("nilai_rupiah").value ="Rp"  + hasil;
+        }
+    </script>
+</body>
+</html>

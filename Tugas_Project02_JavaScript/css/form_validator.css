@@ -1,0 +1,38 @@
+fieldset {
+  background-color: rgb(247, 247, 247);
+  border-radius: 7px;
+}
+
+.submit {
+  width: 50px;
+}
+.container {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+#peringatan {
+  position: static;
+  margin-top: 10px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+  width: 100%;
+  background-color: red;
+  box-shadow: 0 0 3px black;
+  color: white;
+  padding: 20px 10px;
+}
+#peringatan button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.keterangan {
+  color: gray;
+}
+.keterangan input {
+  color: gray;
+}

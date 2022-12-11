@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validasi</title>
+    <link rel="stylesheet" href="css/form_validator.css">
+</head>
+
+<body>
+    <h2>From Validasi</h2><hr>
+    <div class="container">
+        <div>
+            <fieldset>
+                <legend>From Validasi</legend>
+                <div><br>
+                    Nama Pelanggan :
+                    <br><label for="name"></label>
+                    <input maxlength="30" type="text" name="nama" id="nama" />
+                </div><br>
+                <div>
+                    Alamat Email :
+                    <br><label for="email"></label>
+                    <input type="email" name="email" id="email" />
+                </div><br>
+                <div>
+                    Jam Keberangkatan :
+                    <br><label for="jam"></label>
+                    <input type="time" name="jam" id="jam" />
+                </div><br>
+                <div>
+                    Tujuan Keberangkatan :
+                    <br><label for="tujuan"></label>
+                    <input type="text" name="tujuan" id="tujuan" />
+                </div><br>
+                <div>
+                    Jumlah Tiket :
+                    <br><label for="Jumlah Tiket"></label>
+                    <input max="10" min="1" type="number" name="alamat" id="tiket"></input>
+                </div><br>
+                <div class="submit">
+                    <input onclick="Validasi()" type="submit" value="submit" class="tombol">
+                </div>
+                <div id="peringatan">
+                    login gagal
+                    <button id="close" onclick="close()">x</button>
+                </div>
+            </fieldset>
+        </div>
+
+
+        <div class="keterangan">
+            Keterangan:
+            <br><br>
+            Nama Pelanggan: <br>
+            <input type="text" readonly value="Andri">
+            <br><br>
+            Alamat Email: <br>
+            <input type="email" readonly value="andri@gmail.com">
+            <br><br>
+            Jam Keberangkatan: <br>
+            <input type="time" readonly value="09:00">
+            <br><br>
+            Tujuan Keberangkatan: <br>
+            <input type="text" readonly value="Jakarta">
+            <br><br>
+            Jumlah Tiket: <br>
+            <input type="number" readonly value="4">
+
+        </div>
+    </div>
+
+    <script>
+        let button = document.getElementById("close")
+        button.onclick = function () {
+            let peringatan = document.getElementById("peringatan");
+            peringatan.style.display = "none";
+        }
+        function Validasi() {
+            let nama = document.getElementById("nama").value.toLowerCase();
+            let email = document.getElementById("email").value;
+            let jam = document.getElementById("jam").value;
+            let tujuan = document.getElementById("tujuan").value.toLowerCase();
+            let tiket = document.getElementById("tiket").value;
+
+            if ((nama == "") || (email == "") || (jam == "") || (tujuan == "") || (tiket == "")) {
+                alert('Anda harus mengisi data dengan lengkap !');
+            }
+            else if ((nama == "andri") && (email == "andri@gmail.com") && (jam == "09:00") && (tujuan == "jakarta") && (tiket == "4")) {
+                alert('login sukses');
+                location.href = "validasi-sukses.html"
+            }
+            else {
+                var peringatan = document.getElementById("peringatan");
+                peringatan.style.display = "block";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
